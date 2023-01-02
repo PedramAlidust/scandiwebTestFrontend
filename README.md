@@ -2,8 +2,6 @@
 
 >Frontend part of Scandiweb junior developer test task
 
-# project backend
-
 ``` bash
 ```
 
