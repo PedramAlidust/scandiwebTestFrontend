@@ -55,13 +55,11 @@ export default {
     proxy: true,
   },
 
-  proxy: {
-    // Simple proxy
-    "/api/": {
-      target: "https://juniortest-api.theresume.ir",
-      pathRewrite: { "^/api/": "" }
-    }
-  }
+     /* Set envirement variable */
+     env: {
+      UrlApi: "https://juniortest-api.theresume.ir",
+    },
+  
 
 
 
