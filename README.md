@@ -1,4 +1,4 @@
-# nuxt-project
+# Frontend part
 
 >Frontend part of Scandiweb junior developer test task
 
