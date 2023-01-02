@@ -14,7 +14,7 @@ const createStore = () => {
         /* request config */
         var ReqConfig = {
           method: "get",
-          url: `${process.env.UrlApi}`,
+          url: `/api/`,
         };
         /* request section */
         await this.$axios(ReqConfig)
@@ -37,7 +37,7 @@ const createStore = () => {
         /* request config */
         var ReqConfig = {
           method: "post",
-          url: `${process.env.UrlApi}/addproduct`,
+          url: `/api/addproduct`,
           data: data,
         };
         /* request section */
@@ -70,7 +70,7 @@ const createStore = () => {
         /* request config */
         var ReqConfig = {
           method: "post",
-          url: `${process.env.UrlApi}/addproduct`,
+          url: `/api/addproduct`,
           data: data,
         };
         /* request section */
@@ -101,7 +101,7 @@ const createStore = () => {
         /* request config */
         var ReqConfig = {
           method: "post",
-          url: `${process.env.UrlApi}/addproduct`,
+          url: `/api/addproduct`,
           data: data,
         };
         /* request section */
@@ -131,7 +131,7 @@ const createStore = () => {
         /* request config */
         var ReqConfig = {
           method: "post",
-          url: `${process.env.UrlApi}/products/massdelete`,
+          url: `/api/products/massdelete`,
           data: data,
         };
         /* request section */
