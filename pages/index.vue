@@ -63,7 +63,7 @@ export default {
       })
     }
   }, 
-  mounted() {
+  created() {
     //Load Products
     this.GetProducts()
   }, 
