@@ -75,7 +75,7 @@
               <p class="FormLabel fw-bold">Type Switcher</p>
             </div>
             <div>
-              <select id="productType" @change="TypeSwitcher($event)" class="ms-3 form-select">
+              <select id="#productType" @change="TypeSwitcher($event)" class="ms-3 form-select">
                 <option selected>select a product type</option>
                 <option value="DVD" id="DVD">DVD</option>
                 <option value="Furniture" id="Furniture">Furniture</option>
