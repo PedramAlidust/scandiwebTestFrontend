@@ -15,7 +15,6 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {rel: 'stylesheet', type: 'text/css', href: '/css/mapbox/mapbox.css'}
     ],
     script: [{ src: "/js/bootstrap/bootstrap.bundle.min.js", body: true }],
   },
@@ -50,16 +49,8 @@ export default {
     //Cookies With options
     ["cookie-universal-nuxt", { alias: "cookiz" }],
 
-    //Make PWA
-    '@nuxtjs/pwa',
-
   ],
 
-  /*Build configuration */
-  buildModules: [
-    '@nuxtjs/pwa',
-  ],
- 
   axios: {
     proxy: true,
   },

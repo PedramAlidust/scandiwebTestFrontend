@@ -15,9 +15,6 @@ import { createStore } from './store.js'
 
 import nuxt_plugin_cookieuniversalnuxt_10cb9c84 from 'nuxt_plugin_cookieuniversalnuxt_10cb9c84' // Source: ./cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_axios_427903d4 from 'nuxt_plugin_axios_427903d4' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_workbox_84a6749c from 'nuxt_plugin_workbox_84a6749c' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_57f38a76 from 'nuxt_plugin_metaplugin_57f38a76' // Source: ./pwa/meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_4ea43f8e from 'nuxt_plugin_iconplugin_4ea43f8e' // Source: ./pwa/icon.plugin.js (mode: 'all')
 import nuxt_plugin_vuelidate_4345260a from 'nuxt_plugin_vuelidate_4345260a' // Source: ../plugins/vuelidate (mode: 'all')
 
 // Component: <ClientOnly>
@@ -86,7 +83,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Scandiweb Test","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Frontend part of Scandiweb junior developer test task"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002Fcss\u002Fmapbox\u002Fmapbox.css"}],"script":[{"src":"\u002Fjs\u002Fbootstrap\u002Fbootstrap.bundle.min.js","body":true}],"style":[]},
+    head: {"title":"Scandiweb Test","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Frontend part of Scandiweb junior developer test task"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"script":[{"src":"\u002Fjs\u002Fbootstrap\u002Fbootstrap.bundle.min.js","body":true}],"style":[]},
 
     store,
     router,
@@ -221,18 +218,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_427903d4 === 'function') {
     await nuxt_plugin_axios_427903d4(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_workbox_84a6749c === 'function') {
-    await nuxt_plugin_workbox_84a6749c(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_metaplugin_57f38a76 === 'function') {
-    await nuxt_plugin_metaplugin_57f38a76(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_iconplugin_4ea43f8e === 'function') {
-    await nuxt_plugin_iconplugin_4ea43f8e(app.context, inject)
   }
 
   if (typeof nuxt_plugin_vuelidate_4345260a === 'function') {
