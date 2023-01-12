@@ -712,7 +712,7 @@ const createStore = () => {
         /* request config */
         var ReqConfig = {
           method: "get",
-          url: `${"https://juniortest-api.theresume.ir"}`
+          url: `${"http://localhost"}`
         };
         /* request section */
 
@@ -731,11 +731,12 @@ const createStore = () => {
         data.append("name", payload.name);
         data.append("price", payload.price);
         data.append("size", payload.size);
+        data.append("type", payload.type);
         /* request config */
 
         var ReqConfig = {
           method: "post",
-          url: `${"https://juniortest-api.theresume.ir"}/addproduct`,
+          url: `${"http://localhost"}/addproduct`,
           data: data
         };
         /* request section */
@@ -764,11 +765,12 @@ const createStore = () => {
         data.append("height", payload.height);
         data.append("width", payload.width);
         data.append("length", payload.length);
+        data.append("type", payload.type);
         /* request config */
 
         var ReqConfig = {
           method: "post",
-          url: `${"https://juniortest-api.theresume.ir"}/addproduct`,
+          url: `${"http://localhost"}/addproduct`,
           data: data
         };
         /* request section */
@@ -795,11 +797,12 @@ const createStore = () => {
         data.append("name", payload.name);
         data.append("price", payload.price);
         data.append("weight", payload.weight);
+        data.append("type", payload.type);
         /* request config */
 
         var ReqConfig = {
           method: "post",
-          url: `${"https://juniortest-api.theresume.ir"}/addproduct`,
+          url: `${"http://localhost"}/addproduct`,
           data: data
         };
         /* request section */
@@ -829,7 +832,7 @@ const createStore = () => {
 
         var ReqConfig = {
           method: "post",
-          url: `${"https://juniortest-api.theresume.ir"}/products/massdelete`,
+          url: `${"http://localhost"}/products/massdelete`,
           data: data
         };
         /* request section */
@@ -1124,7 +1127,7 @@ async function setContext(app, context) {
       error: context.error,
       base: app.router.options.base,
       env: {
-        "UrlApi": "https://juniortest-api.theresume.ir"
+        "UrlApi": "http://localhost"
       }
     }; // Only set once
 

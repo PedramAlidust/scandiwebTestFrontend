@@ -380,7 +380,8 @@ export default {
               sku: this.Sku, 
               name: this.ProductName, 
               price: this.Price, 
-              size: this.Size
+              size: this.Size, 
+              type: this.WichFormSelected
             })
         } else {
           this.IsFormEmpty = true;
@@ -407,7 +408,8 @@ export default {
               price: this.Price, 
               width: this.Width, 
               height: this.Height, 
-              length: this.Length 
+              length: this.Length, 
+              type: this.WichFormSelected
             })
         } else {
           this.IsFormEmpty = true;
@@ -425,6 +427,7 @@ export default {
               name: this.ProductName, 
               price: this.Price, 
               weight: this.Weight,  
+              type: this.WichFormSelected
           })
         } else {
           this.IsFormEmpty = true;

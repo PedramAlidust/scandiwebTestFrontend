@@ -33,6 +33,7 @@ const createStore = () => {
         data.append("name", payload.name);
         data.append("price", payload.price);
         data.append("size", payload.size);
+        data.append("type", payload.type);
 
         /* request config */
         var ReqConfig = {
@@ -66,6 +67,7 @@ const createStore = () => {
         data.append("height", payload.height);
         data.append("width", payload.width);
         data.append("length", payload.length);
+        data.append("type", payload.type);
 
         /* request config */
         var ReqConfig = {
@@ -97,6 +99,7 @@ const createStore = () => {
         data.append("name", payload.name);
         data.append("price", payload.price);
         data.append("weight", payload.weight);
+        data.append("type", payload.type);
 
         /* request config */
         var ReqConfig = {

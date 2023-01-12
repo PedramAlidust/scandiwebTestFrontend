@@ -57,10 +57,7 @@ export default {
 
      /* Set envirement variable */
      env: {
-      UrlApi: "https://juniortest-api.theresume.ir",
+      UrlApi: "http://localhost",
     },
   
-
-
-
 };
