@@ -712,7 +712,7 @@ const createStore = () => {
         /* request config */
         var ReqConfig = {
           method: "get",
-          url: `${"http://localhost"}`
+          url: `/api/`
         };
         /* request section */
 
@@ -736,7 +736,7 @@ const createStore = () => {
 
         var ReqConfig = {
           method: "post",
-          url: `${"http://localhost"}/addproduct`,
+          url: `/api/addproduct`,
           data: data
         };
         /* request section */
@@ -770,7 +770,7 @@ const createStore = () => {
 
         var ReqConfig = {
           method: "post",
-          url: `${"http://localhost"}/addproduct`,
+          url: `/api/addproduct`,
           data: data
         };
         /* request section */
@@ -802,7 +802,7 @@ const createStore = () => {
 
         var ReqConfig = {
           method: "post",
-          url: `${"http://localhost"}/addproduct`,
+          url: `/api/addproduct`,
           data: data
         };
         /* request section */
@@ -832,7 +832,7 @@ const createStore = () => {
 
         var ReqConfig = {
           method: "post",
-          url: `${"http://localhost"}/products/massdelete`,
+          url: `/api/products/massdelete`,
           data: data
         };
         /* request section */
@@ -1126,9 +1126,7 @@ async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {
-        "UrlApi": "http://localhost"
-      }
+      env: {}
     }; // Only set once
 
     if (context.req) {
