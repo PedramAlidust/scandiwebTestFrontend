@@ -52,10 +52,8 @@ export default {
   ],
 
      /* Envirement variable */
-     /*
      env: {
-      UrlApi: "https://juniortest.theresume.ir/api/",
+      UrlApi: "https://www.google.com",
     },
-    */
   
 };

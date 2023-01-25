@@ -63,6 +63,9 @@ export default {
       })
     }
   }, 
+  created() {
+    this.GetProducts()
+  },
     head() {
     return {
       title: "Product List",
