@@ -51,6 +51,10 @@ export default {
 
   ],
 
+  axios: {
+    proxy: true
+  },
+
      /* Envirement variable */
      env: {
       UrlApi: "https://juniortest-api.theresume.ir/",
