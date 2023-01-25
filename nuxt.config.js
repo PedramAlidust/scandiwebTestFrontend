@@ -52,8 +52,10 @@ export default {
   ],
 
      /* Envirement variable */
+     /*
      env: {
       UrlApi: "https://www.google.com",
     },
+    */
   
 };

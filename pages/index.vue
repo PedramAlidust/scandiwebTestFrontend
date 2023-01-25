@@ -7,6 +7,7 @@
           <h1>Product List</h1>
         </div>
       <!-- Buttons -->  
+      <!--
         <div class="d-flex align-items-center">
           <nuxt-link to="/addproduct">
           <button class="btn btn-dark mx-4">ADD</button>
@@ -14,14 +15,18 @@
           <button @click="MassDelete" class="btn btn-danger" id="delete-product-btn">MASS DELETE</button>
         </div>
       </div>
+      -->
       <!-- devider -->
       <hr>
     </div>    
     <!-- products list -->
     <div class="container DefaultHeight">
       <div class="row gx-4">
+        <!--
         <div v-for="Product in DspProducts" :key="Product.id" class="col-lg-3">
+          -->
             <!-- product item -->
+            <!--
             <div class="card shadow-lg mt-5 mt-lg-5 py-3">
                 <div class="card-body">
                   <input v-model="DeleteItemIds" :value="Product.id" class="form-check-input delete-checkbox" type="checkbox">
@@ -32,7 +37,8 @@
                   <p v-if="Product.weight" class="text-muted text-center">Weight: {{Product.weight}} KG</p>
                   <p v-if="Product.width && Product.height && Product.length" class="text-muted text-center">Dimension: {{Product.width}} x {{Product.height}} x {{Product.length}}</p>
                 </div>
-            </div>       
+            </div>      
+            --> 
         </div>
       </div>  <!-- End Products Row -->
     </div>
@@ -45,6 +51,7 @@
 </template>
 
 <script>
+/*
 import { mapGetters, mapActions } from "vuex";
 export default {
   data() {
@@ -72,6 +79,7 @@ export default {
     };
   },
 };
+*/
 </script>
 
 <style scoped>
