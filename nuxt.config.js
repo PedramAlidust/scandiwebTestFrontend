@@ -53,7 +53,7 @@ export default {
 
      /* Envirement variable */
      env: {
-      UrlApi: "https://juniortest.theresume.ir/api/",
+      UrlApi: "https://juniortest-api.theresume.ir/",
     },
   
 };
