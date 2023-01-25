@@ -65,9 +65,7 @@ export default {
   }, 
   mounted() {
     //Load Products
-    /*
     this.GetProducts()
-    */
   }, 
     head() {
     return {
