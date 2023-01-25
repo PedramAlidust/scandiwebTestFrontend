@@ -11,7 +11,9 @@
           <nuxt-link to="/addproduct">
           <button class="btn btn-dark mx-4">ADD</button>
           </nuxt-link>
+          <!--
           <button @click="MassDelete" class="btn btn-danger" id="delete-product-btn">MASS DELETE</button>
+          -->
         </div>
       </div>
       <!-- devider -->
@@ -47,6 +49,7 @@
 </template>
 
 <script>
+/*
 import { mapGetters, mapActions } from "vuex";
 export default {
   data() {
@@ -71,12 +74,14 @@ export default {
     this.GetProducts()
   },
   */
+ /*
     head() {
     return {
       title: "Product List",
     };
   },
 };
+*/
 </script>
 
 <style scoped>
