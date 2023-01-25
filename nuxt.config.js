@@ -58,8 +58,7 @@ export default {
   
   proxy: {
     "/api/": {
-      target: "https://dmsapi.fardaco.com/",
-      pathRewrite: { "^/api/": "" }
+      target: "https://juniortest-api.theresume.ir",
     }
   },
   
