@@ -62,10 +62,13 @@ export default {
         DeleteIds: this.DeleteItemIds
       })
     }
-  }, 
+  },
+  /* 
   created() {
+    
     this.GetProducts()
   },
+  */
     head() {
     return {
       title: "Product List",
