@@ -57,7 +57,7 @@ export default {
 
   
   proxy: {
-    " ": {
+    "/api/": {
       target: "https://juniortest-api.theresume.ir",
     }
   },
