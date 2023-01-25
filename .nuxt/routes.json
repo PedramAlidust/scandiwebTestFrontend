@@ -2,15 +2,15 @@
   {
     "name": "AddProduct",
     "path": "/AddProduct",
-    "component": "/home/pedram/Projects/scandiwebFrontend/pages/AddProduct.vue",
+    "component": "/home/pedram/Projects/ScandiwebFront/pages/AddProduct.vue",
     "chunkName": "pages/AddProduct",
-    "_name": "_54465d68"
+    "_name": "_bf096cc6"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/pedram/Projects/scandiwebFrontend/pages/index.vue",
+    "component": "/home/pedram/Projects/ScandiwebFront/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_186a56f0"
+    "_name": "_65a65b33"
   }
 ]

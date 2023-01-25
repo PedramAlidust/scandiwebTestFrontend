@@ -11,9 +11,7 @@
           <nuxt-link to="/addproduct">
           <button class="btn btn-dark mx-4">ADD</button>
           </nuxt-link>
-          <!--
           <button @click="MassDelete" class="btn btn-danger" id="delete-product-btn">MASS DELETE</button>
-          -->
         </div>
       </div>
       <!-- devider -->
@@ -21,11 +19,9 @@
     </div>    
     <!-- products list -->
     <div class="container DefaultHeight">
-      <!--
       <div class="row gx-4">
         <div v-for="Product in DspProducts" :key="Product.id" class="col-lg-3">
-             product item -->
-             <!--
+         <!-- product item -->       
             <div class="card shadow-lg mt-5 mt-lg-5 py-3">
                 <div class="card-body">
                   <input v-model="DeleteItemIds" :value="Product.id" class="form-check-input delete-checkbox" type="checkbox">
@@ -38,7 +34,7 @@
                 </div>
             </div>       
         </div>
-      </div>   End Products Row -->
+      </div>   <!-- End Products Row -->
     </div>
     <!-- Footer section -->
     <footer class="container mt-5 pt-2">
@@ -49,7 +45,6 @@
 </template>
 
 <script>
-/*
 import { mapGetters, mapActions } from "vuex";
 export default {
   data() {
@@ -68,20 +63,18 @@ export default {
       })
     }
   },
-  /* 
-  created() {
-    
+ 
+  created() {    
     this.GetProducts()
   },
-  */
- /*
+
     head() {
     return {
       title: "Product List",
     };
   },
 };
-*/
+
 </script>
 
 <style scoped>
