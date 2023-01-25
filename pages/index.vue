@@ -19,9 +19,11 @@
     </div>    
     <!-- products list -->
     <div class="container DefaultHeight">
+      <!--
       <div class="row gx-4">
         <div v-for="Product in DspProducts" :key="Product.id" class="col-lg-3">
-            <!-- product item -->
+             product item -->
+             <!--
             <div class="card shadow-lg mt-5 mt-lg-5 py-3">
                 <div class="card-body">
                   <input v-model="DeleteItemIds" :value="Product.id" class="form-check-input delete-checkbox" type="checkbox">
@@ -34,7 +36,7 @@
                 </div>
             </div>       
         </div>
-      </div>  <!-- End Products Row -->
+      </div>   End Products Row -->
     </div>
     <!-- Footer section -->
     <footer class="container mt-5 pt-2">
