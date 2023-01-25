@@ -45,20 +45,16 @@ export default {
   modules: [
     //Axios for requests
     "@nuxtjs/axios",
+    '@nuxtjs/proxy',
 
     //Cookies With options
     ["cookie-universal-nuxt", { alias: "cookiz" }],
 
   ],
-
-  axios: {
-    proxy: true,
-  },
-
   
   proxy: {
     "/api/": {
-      target: "theresume.ir",
+      target: "https://juniortest-api.theresume.ir",
       pathRewrite: { "^/api/": "" }
     }
   },
