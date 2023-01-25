@@ -57,7 +57,11 @@ export default {
 
   
   proxy: {
-    '/api/': 'https://juniortest-api.theresume.ir',
+    "/api/": {
+      target: "https://juniortest-api.theresume.ir",
+      pathRewrite: { "^/api/": " " }
+    }
   },
+
   
 };
